@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<link href="DragAndDrop.CSS" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+        <div class='example-parent'>
+           <div class="example-origin" 
+                id='dropDivOrigin'
+                ondragover='onDragOver(event);'
+                ondrop='onDrop(event);'>
+                <div class="example-draggable"
+                        id='draggableSpanOne'
+                        draggable='true'
+                        ondragstart='onDragStart(event);'>
+                            DraggableElement 1
+                </div>
+                <div class="example-draggable"
+                    id='draggableSpanTwo'
+                    draggable='true'
+                    ondragstart='onDragStart(event);'>
+                        DraggableElement 2
+                </div>
+           </div>
+            
+            <div class="example-dropzone"
+                id='dropSpanOne'
+                ondragover='onDragOver(event);'
+                ondrop='onDrop(event);'>
+                    DropZone
+            </div>
+            <div class="example-dropzone"
+                id='dropSpanTwo'
+                ondragover='onDragOver(event);'
+                ondrop='onDrop(event);'>
+                    DropZone
+            </div>
+        </div>
+        <script language='javascript' type="application/javascript"
+            src="DragAndDrop.JS"></script>
+	</body>
+</html>
